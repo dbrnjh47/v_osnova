@@ -301,7 +301,45 @@
     </div>
 
 
+    <button onclick="modal(this);" data-modal="#modal_test" style="margin-top: 200px;">Test modal</button> <br>
+    <button onclick="modal('#modal_test')">Test modal</button>
 
+    <div id="modal_test" class="modal cooperation_thanks">
+      <div class="modal__content">
+          <div class="head">
+              <button class="close__btn modal_close">
+                  <img src="/resources/js/custom/bpopup/close.svg" alt="close" />
+              </button>
+          </div>
+          <div class="cooperation_thanks__content">
+              <div class="cooperation_thanks__images">
+                  
+                  <img class="first white_them" src="/sample/v1/temple/images/logos/logo_black.svg" alt="logo">
+                  <img class="first" src="/sample/v1/temple/images/logos/logo_white.svg" alt="logo">
+                  <img class="second" src="/sample/v1/temple/images/cooperation/modal_thanks/message.svg" alt="message">
+              </div>
+              <div class="cooperation_thanks__text">
+                  <span class="cooperation_thanks__text__main">
+                      Заявка на сотрудничество успешно отправлена
+                  </span>
+                  <span class="cooperation_thanks__text__sub">
+                      Наши менеджеры свяжутся с вамив ближайшее время
+                  </span>
+              </div>
+              <div class="cooperation_thanks__social">
+                  <div class="social__item first">
+                      <img src="/sample/v1/temple/images/cooperation/modal_thanks/telegram.svg" alt="telegram">
+                  </div>
+                  <div class="social__item second">
+                      <img src="/sample/v1/temple/images/cooperation/modal_thanks/whatsapp.svg" alt="whatsapp">
+                  </div>
+              </div>
+          </div>
+          <div class="footer__close__btn modal_close">
+              <button>Close</button>
+          </div>
+      </div>
+  </div>
 
 
     <footer class="footer">
@@ -379,6 +417,7 @@
   </div>
 
   <script type="module" src="/resources/js/layout/layout.js"></script>
+  <script type="module" src="/resources/js/modal/test.js"></script>
 </body>
 
 </html>
