@@ -10,5 +10,13 @@ export default defineConfig({
       },
     },
   },
+  // https://stackoverflow.com/questions/68147471/how-to-set-sassoptions-in-vite/78997875#78997875
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler', // or 'modern'
+      },
+    },
+  },
   // publicDir: resolve(__dirname, 'src'),
 });
